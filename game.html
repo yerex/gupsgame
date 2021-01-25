@@ -134,25 +134,25 @@ class PlayerKnight
 		if (this.health <=0)
 		{
 			if (this.facing<0)
-				this.getElement().style.background = this.imageUrl + "-128px -64px /1600%";
+				this.getElement().style.background = this.imageUrl + "-128px -64px /800%";
 			else
-				this.getElement().style.background = this.imageUrl + "-192px -64px /1600%";
+				this.getElement().style.background = this.imageUrl + "-192px -64px /800%";
 			return;
 		}
 
 		if (this.attacking)
 		{
 			if (this.facing<0)
-				this.getElement().style.background = this.imageUrl + "-320px 0px /1600%";
+				this.getElement().style.background = this.imageUrl + "-320px 0px /800%";
 			else
-				this.getElement().style.background = this.imageUrl + "-256px 0px /1600%";
+				this.getElement().style.background = this.imageUrl + "-256px 0px /800%";
 		}
 		else if (this.jumping)
 		{
 			if (this.facing<0)
-				this.getElement().style.background = this.imageUrl + "-192px 0px /1600%";
+				this.getElement().style.background = this.imageUrl + "-192px 0px /800%";
 			else
-				this.getElement().style.background = this.imageUrl + "-128px 0px /1600%";
+				this.getElement().style.background = this.imageUrl + "-128px 0px /800%";
 		}
 		else
 		{
@@ -162,9 +162,9 @@ class PlayerKnight
 			var framePx = frame * -64;
 
 			if (this.facing < 0)
-				this.getElement().style.background = this.imageUrl + "-64px " + framePx + "px /1600%";
+				this.getElement().style.background = this.imageUrl + "-64px " + framePx + "px /800%";
 			else
-				this.getElement().style.background = this.imageUrl + "0 " + framePx + "px /1600%";
+				this.getElement().style.background = this.imageUrl + "0 " + framePx + "px /800%";
 		}
 
 	}
@@ -274,7 +274,7 @@ class PlayerKnight
 }
  
 var knight = new PlayerKnight(0,0,100,"knight1","knight1health","knight.png",'w','a','d','s');
-var knight2 = new PlayerKnight(100,0,100,"knight2","knight2health","knight.png",'i','j','l','k');
+var knight2 = new PlayerKnight(100,0,100,"knight2","knight2health","vader.png",'i','j','l','k');
 characters.push(knight);
 characters.push(knight2);
 
